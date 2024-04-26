@@ -43,8 +43,7 @@ def create_rag_sage_pipeline(retriever, chat_model, user_input):
     return rag_chain.invoke(user_input)
 
 # Set up Streamlit app
-st.title("📚 RAG Sage: The Document Genius 📖")
-st.subheader("Let RAG Sage Assist You in Easily Browsing Your PDF Documents using RAG")
+st.title("RAG Sage: The Document Genius")
 
 # Load PDF document
 loader = PyPDFLoader('arxiv.pdf')
